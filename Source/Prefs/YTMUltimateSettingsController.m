@@ -106,7 +106,7 @@
 
         cell.textLabel.text = LOC(@"ENABLED");
         cell.textLabel.adjustsFontSizeToFitWidth = YES;
-        cell.textLabel.textColor = [UIColor colorWithRed:230/255.0 green:75/255.0 blue:75/255.0 alpha:255/255.0];
+        cell.textLabel.textColor = [UIColor whiteColor];
         cell.imageView.image = [UIImage systemImageNamed:@"power"];
         cell.imageView.tintColor = [UIColor whiteColor];
 
@@ -136,6 +136,7 @@
         cell.detailTextLabel.numberOfLines = 0;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.imageView.image = [UIImage systemImageNamed:settingData[@"image"]];
+        cell.imageView.tintColor = [UIColor whiteColor];
 
         return cell;
     }
